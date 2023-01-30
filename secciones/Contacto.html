@@ -21,7 +21,7 @@
                 <i class="fas fa-bars"></i>
             </label>
             <a href="../index.html" class="enlace">
-                <img src="../recursos/imagenes/akira.png" alt="Logo" class="logo" >
+                <img src="../recursos/imagenes/akira.png" alt="Logo" class="logo">
             </a>
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
@@ -33,8 +33,31 @@
         </nav>
     </header>
     <!-- Contenido principal -->
-    <main>
-        <section class="Contacto">
+    <main class="contacto">
+        <section class="main">
+            <figure class="main__figure">
+                <img src="../recursos/imagenes/Tori-Bot.png" class="main__img" alt="Tori Bot">
+            </figure>
+            <div class="main__contact">
+                <h1 class="main__title">CONTACTO</h1>
+                <form action="#" method="get" class="main__form">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="First name" name="Nombre" class="main__input">
+                    <label>Apellido</label>
+                    <input type="text" placeholder="Last name" name="Apellido" class="main__input">
+                    <label>Email</label>
+                    <input type="text" placeholder="Name@email.com"  name="Email"class="main__input">
+                    <label>Telefono</label>
+                    <input type="text" placeholder="Phone Number" name="Tel" class="main__input">
+                    <input type="submit" value="ENVIAR" class="main__input main__input--send">
+                    <label>Mensaje</label>
+                    <textarea placeholder="If you liked the website, leave your comment here." cols="30"
+                        rows="8" name="Comentario" class="main__input"></textarea>
+                </form>
+            </div>
+        </section>
+
+        <!-- <section class="Contacto">
             <form action="#" method="GET">
                 <div>
                     <h1 class="fst-italic decoration">CONTACTO</h1>
@@ -63,7 +86,7 @@
                     <input type="submit" value="ENVIAR">
                 </div>
             </form>
-        </section>
+        </section> -->
     </main>
     <!-- Pie de pagina -->
     <footer>

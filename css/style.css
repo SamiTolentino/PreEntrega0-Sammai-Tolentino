@@ -22,17 +22,99 @@ Cedar Chest - #D9594C
 body {
     background: url(https://static.listadomanga.com/c16bfddc279ff20bd6a5fee31ba708ad.gif)
 }
-.Contacto {
-    font-size: 20px;
-    letter-spacing: 1px;
-    width: 235px;
-    height: 450px;
-    margin: 310px 280px;
-    padding: 90px 80px;
-    bottom: 1px solid black;
-    color: red;
-    background-color: yellow
+
+/* CONTACTO */
+
+.contacto {
+    min-height: 600px;
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    display: flex;
 }
+
+.main {
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.24));
+    overflow: hidden;
+    padding: .7em;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+    animation: mostrar 1.5s ease-in-out;
+}
+
+@keyframes mostrar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main__figure {
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.384);
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__img {
+    margin: auto;
+    width: 80%;
+    max-width: 60vw;
+}
+
+.main__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+
+.main__form {
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+form label{
+    font-size: 25px;
+}
+
+.main__input {
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.main__title {
+    font-size: 2.3rem;
+}
+
+.main__input--send {
+    background-color: #D9594C;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* CONTACTO-FIN */
+
+
+
+
+
 
 /*NAVEGADOR*/
 
@@ -162,7 +244,7 @@ li a:hover {
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 10;
+        z-index: 1000;
     }
 
     nav ul li {
@@ -213,8 +295,8 @@ li a:hover {
 
 .redes-container {
     display: flex;
-    height: 100vh;
-    align-items: flex-end;
+    height: 15vh;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -282,7 +364,7 @@ h1 {
     display: block;
 }
 
-.galeria-1{
+.galeria-1 {
     height: 60vh;
     display: flex;
     align-items: center;
@@ -338,7 +420,7 @@ h1 {
 
 /* GALERIA */
 
-.galeria-2{
+.galeria-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     width: 70%;
