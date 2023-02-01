@@ -36,9 +36,8 @@ body {
 .main {
     margin: auto;
     width: 90%;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.24));
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.205));
     overflow: hidden;
-    padding: .7em;
     border-radius: 1em;
     display: grid;
     grid-auto-rows: max-content;
@@ -60,7 +59,7 @@ body {
 .main__figure {
     overflow: hidden;
     border-radius: 1em;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 255, 255, 0.171);
     display: flex;
     justify-content: space-around;
 }
@@ -86,7 +85,7 @@ body {
     gap: 1.5em;
 }
 
-form label{
+form label {
     font-size: 25px;
 }
 
@@ -485,7 +484,43 @@ h1 {
 
 /* GALERIA-FIN */
 
-.biografía {
+/* BIOGRAFIA */
+
+.biografia__main--foto {
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.171);
+    display: flex;
+    justify-content: space-around;
+}
+
+.biografia {
+    min-height: 600px;
+    background-repeat: no-repeat;
+}
+
+.biografia__main{
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.205));
+    overflow: hidden;
+    border-radius: 8px;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 0.6em;
+}
+
+article p{
+    padding: 10px;
+}
+
+
+
+
+/* .biografía {
     width: 1800px;
     height: 2400px;
     margin: -230px 30px;
@@ -539,13 +574,13 @@ h1 {
     width: 1120px;
     height: 330px;
     margin: 10px 108px;
-}
+} */
 
-.manga_dibujo2 {
+/* .manga_dibujo2 {
     position: relative;
     top: -385px;
     left: 305px;
-}
+} */
 
 .obras {
     margin: 300px 108px;
