@@ -114,7 +114,7 @@ form label {
 /*NAVEGADOR*/
 
 nav {
-    background: #81F0E5;
+    background: #0b2545;
     height: 160px;
     width: 100%;
 }
@@ -140,7 +140,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0B2545;
+    color: #000e1f;
     font-size: 20px;
     padding: 5px 10px;
     border-radius: 3px;
@@ -219,7 +219,7 @@ li a:hover {
         display: flex;
         padding: 8px 20px;
         margin: 50px 10px;
-        color: #0B2545;
+        color: #000e1f;
     }
 
     .logo {
@@ -235,7 +235,7 @@ li a:hover {
         width: 100%;
         padding: 0px 33px;
         height: 100vh;
-        background: #81F0E5;
+        background: #0B2545;
         top: 160px;
         left: -100%;
         text-align: center;
@@ -449,7 +449,7 @@ h1 {
 @media screen and (max-width:1163px) {
 
     .galeria-2 {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         width: 90%;
         margin: auto;
         grid-gap: 17px;
