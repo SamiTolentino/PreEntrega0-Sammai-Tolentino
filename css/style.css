@@ -285,8 +285,8 @@ li a:hover {
 
 .redes-container {
     display: flex;
-    height: 15vh;
-    align-items: flex-start;
+    height: 10vh;
+    align-items: center;
     justify-content: center;
 }
 
@@ -574,11 +574,19 @@ h1 {
 }
 
 article p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: black;
     padding: 5px;
     margin: 5px;
+}
+
+@media (max-width:458px) {
+
+    article p {
+        font-size: 13px;
+    }
+
 }
 
 .top-section {
@@ -605,11 +613,11 @@ article p {
     width: 90%;
     margin-left: 5%;
     position: static;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .experience-slide-one {
-    padding: 0px 30px;
+    padding: 0px 25px;
 
 }
 
@@ -617,20 +625,21 @@ article p {
     text-indent: 0px !important;
     background: 0 0;
     border: none;
-    margin: 0 !important;
+    margin: 1px !important;
     position: relative;
     width: 15vh !important;
 }
 
-.carousel-inner img{
-    width: 40vh;
+.carousel-inner img {
+    width: 47vh;
 }
-@media screen and (max-width:991px){
 
-    .carousel-inner img{
+@media screen and (max-width:991px) {
+
+    .carousel-inner img {
         width: 100vh;
     }
-    
+
 }
 
 .carousel-indicators button:before {
@@ -642,18 +651,13 @@ article p {
 }
 
 .carousel-indicators button h4 {
-    margin-top: -41px;
+    margin-top: -33px;
     position: absolute;
     left: 52%;
     transform: translateX(-50%);
     color: white;
     font-size: 24px;
     font-weight: bold;
-}
-
-.carousel-indicators button i {
-    margin-top: -8px;
-    position: absolute;
 }
 
 .carousel-indicators button.active h4 {
@@ -669,11 +673,14 @@ article p {
 
     .carousel-indicators button.active h4 {
         font-size: 22px;
+        margin-top: -36px;
     }
 
     .carousel-indicators button h4 {
         font-size: 18px;
+        margin-top: -25px;
     }
+
 
 }
 
@@ -691,15 +698,15 @@ article p {
 
 @media (max-width:500px) {
     .carousel-indicators {
-        margin-left: -3%;
+        margin-left: -2.5%;
         width: 105%;
     }
 }
 
-@media (max-width:430px){
+@media (max-width:430px) {
 
     .carousel-indicators button.active h4 {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .carousel-indicators button h4 {
@@ -709,23 +716,31 @@ article p {
 }
 
 .experience-slide-text h3 {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-size: 22px;
     color: black;
     text-align: center;
     background-color: #0b2545c4;
 }
 
-.experience-slide-text p{
+.experience-slide-text p {
     color: black;
     font-size: 20px;
     text-align: center;
     background-color: #0b2545c4;
 }
 
-@media (max-width:991px){
+@media (max-width:1199px){
 
-    .experience-slide-text p{
+    .experience-slide-text p {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .experience-slide-text p {
         font-size: 11px;
     }
 }
@@ -738,8 +753,8 @@ article p {
 
 .carousel-control-next i,
 .carousel-control-prev i {
-    font-size: 30px;
-    color: #333;
+    font-size: 35px;
+    color: black;
 }
 
 /* OBRAS-FIN */
