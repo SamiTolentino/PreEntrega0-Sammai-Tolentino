@@ -10,7 +10,7 @@ Cedar Chest - #D9594C
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Space+Mono:ital@0;1&display=swap');
 
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -227,7 +227,7 @@ li a:hover {
 
     nav ul li {
         display: block;
-        margin: 20px 0;
+        margin: 10px 0;
         line-height: 20px;
     }
 
