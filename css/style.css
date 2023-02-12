@@ -10,7 +10,7 @@ Cedar Chest - #D9594C
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Space+Mono:ital@0;1&display=swap');
 
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -108,14 +108,14 @@ form label {
 /*NAVEGADOR*/
 
 nav {
-    background: #0b2545;
+    background: #0b2545d6;
     height: 160px;
     width: 100%;
 }
 
 .enlace {
     position: absolute;
-    padding: 14px 30px;
+    padding: 11px 30px;
 }
 
 .logo {
@@ -124,7 +124,7 @@ nav {
 
 nav ul {
     float: right;
-    margin: 0px;
+    margin: 1px;
 }
 
 nav ul li {
@@ -134,17 +134,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000e1f;
+    color: black;
     font-size: 20px;
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
-
 }
 
 li a.active,
 li a:hover {
-    background: #D9594C;
+    background: #a7291b;
     transition: .5s;
 }
 
@@ -162,15 +161,9 @@ li a:hover {
     display: none;
 }
 
-.active-nav {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 @media (max-width: 1165px) {
-
     .enlace {
-        padding: 22px 40px;
+        padding: 19px 40px;
     }
 
     .logo {
@@ -184,11 +177,9 @@ li a:hover {
     nav ul li {
         margin: 38px 18px;
     }
-
 }
 
 @media (max-width: 1043px) {
-
     .enlace {
         padding: 27px 32px;
     }
@@ -204,11 +195,9 @@ li a:hover {
     nav ul li {
         margin: 37px 18px;
     }
-
 }
 
 @media (max-width: 961px) {
-
     .checkbtn {
         display: flex;
         padding: 8px 20px;
@@ -226,37 +215,36 @@ li a:hover {
 
     nav ul {
         position: fixed;
-        width: 100%;
-        padding: 0px 33px;
-        height: 100vh;
-        background: #0B2545;
+        padding: 0px 55.5px;
+        background: #0b2545f3;
         top: 160px;
         left: -100%;
         text-align: center;
         transition: all .5s;
         z-index: 1000;
+        border-radius: 10px;
     }
 
     nav ul li {
         display: block;
-        margin: 50px 0;
+        margin: 20px 0;
         line-height: 20px;
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 15px;
+        padding: 0px 15px;
     }
 
     li a.active,
     li a:hover {
-        background: #D9594C;
+        background: #a7291b;
         transition: .5s;
     }
 
     #check:checked~ul {
         left: 0;
     }
-
 }
 
 /* NAVEGADOR-FIN */
@@ -273,22 +261,24 @@ li a:hover {
     color: black;
 }
 
-.tarjetas{
+.tarjetas {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: 45vh;
 }
 
-.tarjeta{
+.tarjeta {
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 300px;
     height: 350px;
     margin: 20px;
 }
 
-.tarjeta .face{
+.tarjeta .face {
     position: absolute;
     width: 77%;
     height: 100%;
@@ -303,14 +293,14 @@ li a:hover {
     box-shadow: 0 5px 10px #000;
 }
 
-.tarjeta .front img{
+.tarjeta .front img {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 101%;
     object-fit: cover;
 }
 
-.tarjeta .front h3{
+.tarjeta .front h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -321,7 +311,7 @@ li a:hover {
     text-align: center;
 }
 
-.tarjeta .back{
+.tarjeta .back {
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
     padding: 15px;
@@ -339,25 +329,26 @@ li a:hover {
     line-height: 50px;
 }
 
-.tarjeta .back .link a{
+.tarjeta .back .link a {
     color: #f3f3f3;
 }
 
-.tarjeta .back .link h3{
+.tarjeta .back .link h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
 
-.tarjeta .back p{
+.tarjeta .back p {
     letter-spacing: 1px;
+    font-size: 13px;
 }
 
-.tarjeta:hover .front{
+.tarjeta:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
 
-.tarjeta:hover .back{
+.tarjeta:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
 
@@ -428,18 +419,12 @@ li a:hover {
 /* GALERIA-3D */
 
 h1 {
-    color: #D9594C;
+    color: black;
     font-weight: 400;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 3.5rem;
     font-size: 40px;
-}
-
-.linea {
-    background: #D9594C;
-    height: 5px;
-    width: 100%;
-    display: block;
+    font-weight: bold;
 }
 
 .galeria-1 {
@@ -451,12 +436,10 @@ h1 {
 }
 
 @media screen and (orientation:landscape) and (max-width:915px) {
-
     .galeria-1 {
         height: 130vh;
         max-height: 65vw;
     }
-
 }
 
 @media screen and (max-width:600px) {
@@ -549,16 +532,14 @@ h1 {
 }
 
 @media screen and (max-width:1163px) {
-
     .galeria-2 {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        width: 80%;
+        width: 68%;
         margin: auto;
         grid-gap: 17px;
         padding: 40px 0;
         overflow: hidden;
     }
-
 }
 
 .light-box {
@@ -603,7 +584,6 @@ h1 {
     height: auto;
     background-color: #0b2545a2;
     border-radius: 8px;
-
 }
 
 .biografia__main {
@@ -616,11 +596,9 @@ h1 {
 }
 
 @media screen and (max-width:1150px) {
-
     .biografia img {
         max-width: 85%;
     }
-
 }
 
 @media screen and (max-width:642px) {
@@ -631,11 +609,9 @@ h1 {
     .biografia__main--foto {
         margin: 30px;
     }
-
 }
 
 @media screen and (max-width:458px) {
-
     .biografia__main {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
@@ -647,7 +623,6 @@ h1 {
     .biografia__main--foto {
         margin: 30px;
     }
-
 }
 
 .biografia__mainParrafo {
@@ -689,7 +664,7 @@ article p {
 /* OBRAS */
 
 .timeline {
-    padding: 130px 0px;
+    padding: 65px 0px;
 }
 
 .carousel {
@@ -758,7 +733,6 @@ article p {
 }
 
 @media (max-width:991px) {
-
     .carousel-indicators button.active h4 {
         font-size: 22px;
         margin-top: -36px;
@@ -768,8 +742,6 @@ article p {
         font-size: 18px;
         margin-top: -25px;
     }
-
-
 }
 
 @media (max-width:767px) {
@@ -792,7 +764,6 @@ article p {
 }
 
 @media (max-width:430px) {
-
     .carousel-indicators button.active h4 {
         font-size: 12px;
     }
@@ -800,7 +771,6 @@ article p {
     .carousel-indicators button h4 {
         font-size: 10px;
     }
-
 }
 
 .experience-slide-text h3 {
@@ -819,15 +789,12 @@ article p {
 }
 
 @media (max-width:1199px) {
-
     .experience-slide-text p {
         font-size: 17px;
     }
-
 }
 
 @media (max-width:991px) {
-
     .experience-slide-text p {
         font-size: 11px;
     }
@@ -846,3 +813,62 @@ article p {
 }
 
 /* OBRAS-FIN */
+
+/* OBRAS-CARTAS */
+
+.body-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid{
+    display: grid;
+    width: 30em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+}
+
+.grid-item{
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.carta-img{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.carta-content{
+    padding: 3rem;
+}
+
+.carta-header{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.carta-text{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+
