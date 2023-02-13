@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -470,23 +471,70 @@
         </section>
 
         <!-- OBRAS-TIMELINE-FIN-->
-        <section class="body-grid">
-            <div class="grid">
-                <div class="grid-item">
-                    <div class="grid__carta">
-                        <img class="carta-img" src="../recursos/imagenes/obras/akira-cameo-dr-slump.jpg"
-                            alt="Akira Cameo">
-                        <div class="carta-content">
-                            <h1 class="carta-header">Lorem, ipsum dolor.</h1>
-                            <p class="carta-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, iure.
+
+        <!-- CARTAS -->
+
+        <h2 class="titulo-h2">CURIOSIDES</h2>
+
+        <section class="cartas wow animate__animated animate__bounceInUp animate__delay-1s">
+            <div class="container">
+                <div class="row mb-5 pb-3">
+
+                    <div class="card colorCartaRed mb-4" style="width: 22rem;">
+                        <img src="../recursos/imagenes/obras/akira-cameo-dr-slump.jpg" class="img-fluid pt-3"
+                            alt="Akira cameo">
+                        <div class="card-body">
+                            <h5 class="text-black text-center">
+                                Dr. Slump
+                            </h5>
+                            <p class="text-black text-center">Cameo de Akira Toriyama</p>
+                            <p class="text-black text-center">Es un anime con un humor muy ácido y surrealista que lo ha
+                                convertido en
+                                una de las series de animación más míticas del país del Sol Naciente.</p>
+                            <p class="text-black text-center">Tal fue el éxito en su emisión original, que el propio
+                                Akira
+                                Toriyama
+                                tiene varios cameos en la ficción.</p>
+                        </div>
+                    </div>
+
+                    <div class="card colorCartaRed mb-4" style="width: 22rem;">
+                        <img src="../recursos/imagenes/obras/Mr-Popo.jpg" class="img-fluid pt-3" alt="Mr Popo">
+                        <div class="card-body">
+                            <h5 class="text-black text-center">
+                                Dragon Ball
+                            </h5>
+                            <p class="text-black text-center">Acusado de racismo</p>
+                            <p class="text-black text-center">La apariencia física de Mr. Momo fue calificada como
+                                ofensiva
+                                y racista por muchos fans y activistas.</p>
+                            <p class="text-black text-center">Como muy bien cuentan desde ScreenRant su piel de color
+                                negro,
+                                sus labios carnosos, su turbante y su lenguaje original hacían ver a muchos que parecía
+                                ser
+                                un personaje inspirado en la esclavitud.
                             </p>
+                        </div>
+                    </div>
+
+                    <div class="card colorCartaRed mb-4" style="width: 22rem;">
+                        <img src="../recursos/imagenes/obras/Neko-Majin.jpg" class="img-fluid pt-3" alt="Neko Majin">
+                        <div class="card-body">
+                            <h5 class="text-black text-center">
+                                Neko Majin Z
+                            </h5>
+                            <p class="text-black text-center">Neko Majin con el baculo sagrado, montado sobre una nube
+                                voladora</p>
+                            <p class="text-black text-center">En la portada del último capítulo de Neko Majin, "Neko
+                                Majin Z 5", donde aparece junto a su maestro, Goku, se lo puede ver a Z equipado con el
+                                báculo sagrado y montando una nube de color púrpura, similar a la Nube Oscura.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- CARTAS-FIN -->
     </main>
-
     <!-- Pie de pagina -->
     <footer>
 
@@ -507,6 +555,10 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="https://kit.fontawesome.com/45880842ed.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
