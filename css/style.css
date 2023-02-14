@@ -29,6 +29,7 @@ body {
     min-height: 600px;
     padding: 80px 0;
     background-repeat: no-repeat;
+    color: aqua;
 }
 
 .main {
@@ -55,7 +56,7 @@ body {
 .main__figure {
     overflow: hidden;
     border-radius: 1em;
-    background-color: #0b2545a1;
+    background-color: #0dcaf072;
     display: flex;
     justify-content: space-around;
 }
@@ -108,7 +109,7 @@ form label {
 /*NAVEGADOR*/
 
 nav {
-    background: #0b2545d6;
+    background: #0d83f091;
     height: 150px;
     width: 100%;
 }
@@ -134,7 +135,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     font-size: 20px;
     padding: 5px 10px;
     border-radius: 3px;
@@ -202,7 +203,7 @@ li a:hover {
         display: flex;
         padding: 8px 20px;
         margin: 50px 10px;
-        color: #000e1f;
+        color: white;
     }
 
     .logo {
@@ -216,7 +217,7 @@ li a:hover {
     nav ul {
         position: fixed;
         padding: 0px 50px;
-        background: #0b2545e5;
+        background: #0d82f0aa;
         top: 162px;
         right: -100%;
         text-align: center;
@@ -252,13 +253,33 @@ li a:hover {
 /* INICIO MAIN*/
 
 .frase__akira h1 {
-    font-size: 30px;
+    font-size: calc(1rem + .9vw);
     text-align: center;
+    color: #FFFFFF;
+    margin: 45px;
+}
+
+@media (max-width:551px){
+    .frase__akira h1 {
+        font-size: calc(0.8rem + .9vw);
+    }
 }
 
 .frase__akira hr {
-    margin: 1rem 6rem;
-    color: black;
+    padding: 30px;
+    margin: 1rem 50px;
+    color: white;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+}
+
+.titulo-tarjetas{
+    color: #dfff00;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 40px;
 }
 
 .tarjetas {
@@ -354,7 +375,8 @@ li a:hover {
 
 .d-flex a {
     padding: 10px 18px;
-    margin: 50px;
+    margin: 30px;
+    margin-bottom: 70px;
 }
 
 /* INICIO MAIN-FIN */
@@ -368,8 +390,8 @@ li a:hover {
 }
 
 .footer-color {
-    background: #0b2545ae;
-    box-shadow: 30px 15px 5px 25px #00000054;
+    background: #0d82f04c;
+    box-shadow: 25px 20px 5px 25px #0d82f0aa;
 }
 
 .footer-parrafo {
@@ -435,17 +457,25 @@ li a:hover {
 
 /* GALERIA-3D */
 
-h1 {
-    color: black;
+/* h1 {
+    color: #FFFFFF;
     font-weight: 400;
     text-align: center;
-    padding-top: 3.5rem;
-    font-size: 40px;
+    padding-top: 7.5rem;
+    font-size: 4rem;
     font-weight: bold;
+} */
+
+.titulo-galeria{
+    color: #dfff00;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 6.5rem;
 }
 
 .galeria-1 {
-    height: 80vh;
+    height: 78vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -588,10 +618,10 @@ h1 {
 /* GALERIA-ARTICULO */
 
 .articulo-goku {
-    margin: 90px 0;
+    margin: 80px 0;
     width: 100%;
-    background: #0b254565;
     border-radius: 15px;
+    margin-bottom: 155px;
 }
 
 /* GALERIA-ARTICULO-FIN */
@@ -610,7 +640,7 @@ h1 {
 .biografia img {
     max-width: 70%;
     height: auto;
-    background-color: #0b2545a2;
+    background-color: #0dcaf07e;
     border-radius: 8px;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
 }
@@ -661,15 +691,19 @@ h1 {
     gap: 0.5em;
     margin: 30px;
     text-align: center;
-    background-color: #0b25458e;
+    background-color: #0dcaf075;
     border-radius: 10px;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
 }
 
+.biografia__mainParrafo h1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 article p {
     font-size: 15px;
-    font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 5px;
     margin: 5px;
 }
@@ -694,12 +728,13 @@ article p {
 /* TIMELINE-BIOGRAFIA */
 
 #section-1 .description {
-    font-size: 13px;
-    color: black;
+    font-size: 14px;
+    color: white;
 }
 
 #section-1 .timeline-content {
-    background: #0b2545d5;
+    margin: 8px;
+    background: rgba(0, 255, 255, 0.37);
 }
 
 .timeline-monochrome .main-timeline .timeline:first-child:before,
@@ -710,7 +745,7 @@ article p {
 }
 
 .top-section h2 {
-    color: rgb(10, 10, 10);
+    color: #dfff00;
     font-weight: bold;
     font-size: 35px;
 }
@@ -729,6 +764,14 @@ article p {
 /* TIMELINE-BIOGRAFIA-FIN */
 
 /* OBRAS */
+
+.titulo-obras{
+    color: #dfff00;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 2.5rem;
+}
 
 .timeline-obras {
     padding: 40px 0px;
@@ -780,7 +823,7 @@ article p {
     left: 0;
 }
 
-.carousel-indicators button h4 {
+.carousel-indicators button h3 {
     margin-top: -33px;
     position: absolute;
     left: 52%;
@@ -790,7 +833,7 @@ article p {
     font-weight: bold;
 }
 
-.carousel-indicators button.active h4 {
+.carousel-indicators button.active h3 {
     color: #000000;
     font-size: 30px;
     position: absolute;
@@ -800,12 +843,12 @@ article p {
 }
 
 @media (max-width:991px) {
-    .carousel-indicators button.active h4 {
+    .carousel-indicators button.active h3 {
         font-size: 22px;
         margin-top: -36px;
     }
 
-    .carousel-indicators button h4 {
+    .carousel-indicators button h3 {
         font-size: 18px;
         margin-top: -25px;
     }
@@ -813,11 +856,11 @@ article p {
 
 @media (max-width:767px) {
 
-    .carousel-indicators button.active h4 {
+    .carousel-indicators button.active h3 {
         font-size: 16px;
     }
 
-    .carousel-indicators button h4 {
+    .carousel-indicators button h3 {
         font-size: 12px;
     }
 
@@ -831,28 +874,28 @@ article p {
 }
 
 @media (max-width:430px) {
-    .carousel-indicators button.active h4 {
+    .carousel-indicators button.active h3 {
         font-size: 12px;
     }
 
-    .carousel-indicators button h4 {
+    .carousel-indicators button h3 {
         font-size: 10px;
     }
 }
 
-.experience-slide-text h3 {
+.experience-slide-text h4 {
     margin-bottom: 5px;
     font-size: 22px;
-    color: black;
+    color: white;
     text-align: center;
-    background-color: #0b2545c4;
+    background-color: #0dcaf071;
 }
 
 .experience-slide-text p {
-    color: black;
+    color: white;
     font-size: 20px;
     text-align: center;
-    background-color: #0b2545c4;
+    background-color: #0dcaf072;
 }
 
 @media (max-width:1199px) {
@@ -884,13 +927,12 @@ article p {
 /* OBRAS-CARTAS */
 
 .titulo-h2 {
-    color: black;
-    font-weight: 400;
+    color: #dfff00;
+    font-weight: bold;
     text-align: center;
     padding-top: 0.5rem;
-    margin: 45px;
-    font-size: 36px;
-    font-weight: bold
+    margin: 60px;
+    font-size: 35px;
 }
 
 .row {
@@ -912,7 +954,7 @@ article p {
 }
 
 .cartas .colorCartaRed {
-    background-color: #0b2545c5;
+    background-color: #0dcaf072;
 }
 
 /* OBRAS-CARTAS-FIN */
