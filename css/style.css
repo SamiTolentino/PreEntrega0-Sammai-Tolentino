@@ -33,7 +33,7 @@ body {
 
 .main {
     margin: auto;
-    width: 90%;
+    width: 85%;
     border-radius: 1em;
     display: grid;
     grid-auto-rows: max-content;
@@ -76,7 +76,7 @@ body {
 .main__form {
     display: grid;
     justify-items: center;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 form label {
@@ -124,7 +124,7 @@ nav {
 
 nav ul {
     float: right;
-    margin: -9px;
+    margin: -9px 0px;
 }
 
 nav ul li {
@@ -217,8 +217,8 @@ li a:hover {
         position: fixed;
         padding: 0px 50px;
         background: #0b2545e5;
-        top: 160px;
-        left: -100%;
+        top: 162px;
+        right: -100%;
         text-align: center;
         transition: all .5s;
         z-index: 1000;
@@ -243,7 +243,7 @@ li a:hover {
     }
 
     #check:checked~ul {
-        left: 12px;
+        right: 5px;
     }
 }
 
@@ -266,7 +266,7 @@ li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 45vh;
+    min-height: 47vh;
 }
 
 .tarjeta {
@@ -352,9 +352,14 @@ li a:hover {
     transform: perspective(600px) rotateY(360deg);
 }
 
+.d-flex a {
+    padding: 10px 18px;
+    margin: 50px;
+}
+
 /* INICIO MAIN-FIN */
 
-/* INICIO FOOTER */
+/* FOOTER */
 
 :root {
     --facebook: #3b5999;
@@ -362,9 +367,21 @@ li a:hover {
     --twitter: #55acee;
 }
 
+.footer-color {
+    background: #0b2545ae;
+    box-shadow: 30px 15px 5px 25px #00000054;
+}
+
+.footer-parrafo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
 .redes-container {
     display: flex;
-    height: 10vh;
+    height: 11vh;
     align-items: center;
     justify-content: center;
 }
@@ -414,7 +431,7 @@ li a:hover {
     background: var(--twitter);
 }
 
-/* INICIO FOOTER-FIN */
+/* FOOTER-FIN */
 
 /* GALERIA-3D */
 
@@ -568,6 +585,17 @@ h1 {
 
 /* GALERIA-FIN */
 
+/* GALERIA-ARTICULO */
+
+.articulo-goku {
+    margin: 90px 0;
+    width: 100%;
+    background: #0b254565;
+    border-radius: 15px;
+}
+
+/* GALERIA-ARTICULO-FIN */
+
 /* BIOGRAFIA */
 
 .biografia__main--foto {
@@ -584,6 +612,7 @@ h1 {
     height: auto;
     background-color: #0b2545a2;
     border-radius: 8px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
 }
 
 .biografia__main {
@@ -634,6 +663,7 @@ h1 {
     text-align: center;
     background-color: #0b25458e;
     border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
 }
 
 article p {
@@ -663,22 +693,44 @@ article p {
 
 /* TIMELINE-BIOGRAFIA */
 
-#section-1 .description{
+#section-1 .description {
     font-size: 13px;
     color: black;
 }
 
-#section-1 .timeline-content{
+#section-1 .timeline-content {
     background: #0b2545d5;
 }
 
+.timeline-monochrome .main-timeline .timeline:first-child:before,
+.timeline-monochrome .main-timeline .timeline:last-child:before {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
 
+.top-section h2 {
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    font-size: 35px;
+}
 
+.timeline-monochrome .main-timeline:before {
+    height: 74.5%;
+    top: 106px;
+}
 
+@media (max-width:991px) {
+    .timeline-monochrome .main-timeline:before {
+        height: 75.5%;
+    }
+}
+
+/* TIMELINE-BIOGRAFIA-FIN */
 
 /* OBRAS */
 
-.timeline {
+.timeline-obras {
     padding: 40px 0px;
 }
 
@@ -843,6 +895,11 @@ article p {
 
 .row {
     justify-content: space-around;
+}
+
+.row .card {
+    border: none;
+    box-shadow: 0px 15px 25px rgb(0 0 0 / 35%);
 }
 
 .cartas p {

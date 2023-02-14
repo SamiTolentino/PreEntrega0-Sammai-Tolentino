@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://kit.fontawesome.com/45880842ed.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -42,7 +43,7 @@
         <!-- GALERIA EN 3D -->
 
         <h1>Galeria</h1>
-        
+
         <section class="galeria-1">
             <div class="slider">
                 <span style="--i:1"><img src="../recursos/imagenes/galeria/Dragon-Ball-001.jpg"
@@ -230,13 +231,51 @@
                 </div>
             </div>
         </div>
+
+        <!-- MODAL-GALERIA-FIN -->
+
+        <article class="articulo-goku wow animate__animated animate__ animate__zoomIn"
+            style="visibility: visible; animation-name: zoomIn;">
+            <section class="mt-5 pt-3 pb-5">
+                <div class="container">
+                    <h2 class="text-center text-white mb-3 pb-3 pt-3">Akira Toriyama dibuja a Goku</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="text-white fs-5">Somos millones quienes crecimos con <strong>Dragon Ball</strong>.
+                                De
+                                esos, más de alguno
+                                intentó dibujar a
+                                <strong>Gokú</strong>, algunos con éxito y otros (como quien está escribiendo esto)
+                                fracasaron completamente.
+                                Y si bien, <strong>Gokú</strong> ha tenido unos leves aunque notorios cambios en su
+                                estética
+                                a través de los
+                                años, siempre será un buen momento para ver cómo era en un principio. Algo que se puede
+                                observar en este video en donde el propio <strong>Akira Toriyama</strong>, sin mayor
+                                guía
+                                que su mano, dibuja
+                                a uno de nuestros saiyajines favoritos. ¡Que lo disfruten!
+                            </p>
+                        </div>
+                        <div class="col-lg-6 pt-1">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FRadioBioBio%2Fvideos%2F2839728086083028%2F&show_text=false&width=560&t=0"
+                                    width="560" height="314" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                    allowFullScreen="true"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
     </main>
 
-    <!-- MODAL-GALERIA-FIN -->
-
     <!-- Pie de pagina -->
-    
-    <footer>
+
+    <footer class="footer-color">
         <div class="redes-container">
             <ul>
                 <li>
@@ -253,7 +292,14 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-parrafo">
+            <p><strong>© 2023 by Sammai Tolentino.</strong> All rights reserved.</p>
+        </div>
     </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
