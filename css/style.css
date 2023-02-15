@@ -104,6 +104,13 @@ form label {
     font-weight: 600;
 }
 
+.frase-final h2{
+    font-size: calc(1rem + .9vw);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 45px;
+}
+
 /* CONTACTO-FIN */
 
 /*NAVEGADOR*/
@@ -259,7 +266,7 @@ li a:hover {
     margin: 45px;
 }
 
-@media (max-width:551px){
+@media (max-width:551px) {
     .frase__akira h1 {
         font-size: calc(0.8rem + .9vw);
     }
@@ -274,7 +281,7 @@ li a:hover {
     opacity: .25;
 }
 
-.titulo-tarjetas{
+.titulo-tarjetas {
     color: #dfff00;
     text-align: center;
     font-size: 40px;
@@ -394,16 +401,18 @@ li a:hover {
     box-shadow: 25px 20px 5px 25px #0d82f0aa;
 }
 
-.footer-parrafo {
+.footer__parrafo {
     display: flex;
     color: white;
     justify-content: center;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .redes-container {
     display: flex;
-    height: 11vh;
+    margin-bottom: -30px;
+    height: 14vh;
     align-items: center;
     justify-content: center;
 }
@@ -457,16 +466,7 @@ li a:hover {
 
 /* GALERIA-3D */
 
-/* h1 {
-    color: #FFFFFF;
-    font-weight: 400;
-    text-align: center;
-    padding-top: 7.5rem;
-    font-size: 4rem;
-    font-weight: bold;
-} */
-
-.titulo-galeria{
+.titulo-galeria {
     color: #dfff00;
     text-align: center;
     font-size: 50px;
@@ -696,7 +696,7 @@ li a:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
 }
 
-.biografia__mainParrafo h1{
+.biografia__mainParrafo h1 {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
@@ -733,7 +733,7 @@ article p {
 }
 
 #section-1 .timeline-content {
-    margin: 8px;
+    margin-bottom: 15px;
     background: rgba(0, 255, 255, 0.37);
 }
 
@@ -765,7 +765,7 @@ article p {
 
 /* OBRAS */
 
-.titulo-obras{
+.titulo-obras {
     color: #dfff00;
     text-align: center;
     font-size: 50px;
